@@ -1,0 +1,59 @@
+<div class="question0" style="background: black; width: 700px; height: 350px; margin-left: 600px;">
+	<h1 class="variant1" style="color: white; margin-left: 235px; padding-top: 150px;
+	margin-top: 175px ;">НАЧАТЬ ТЕСТ</h1>
+</div>
+<div class="question1" style="width: 500px; height: 650px;margin-left: 700px; background: black; display: none;">
+	<img src="36.jpg" style="width: 500px; height: 300px;">
+	<h1 style="color: white;">Кто это?</h1>
+	<div class="variant1"style="background: white; height: 70px; font-size: 30px">Томб Райдер</div>
+	<div class="variant2"style="background: white; height: 70px; font-size: 30px">Лара Крофт</div>
+	<div class="variant3"style="background: white; height: 70px; font-size: 30px">Не знаю</div>
+</div>
+
+<div class="question2" style="width: 500px; height: 550px;margin-left: 700px; background: black; display: none;">
+	<iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/56163249/10992732">Слушайте <a href='https://music.yandex.ru/album/10992732/track/56163249'>MUKANJYO</a> — <a href='https://music.yandex.ru/artist/4697376'>Survive Said the Prophet</a> на Яндекс.Музыке</iframe>
+	<h1 style="color: white;">Из какого это аниме?</h1>
+	<div class="variant1" style="background: white; height: 70px; font-size: 30px">Корона Греха</div>
+	<div class="variant2" style="background: white; height: 70px; font-size: 30px">Блич</div>
+	<div class="variant3" style="background: white; height: 70px; font-size: 30px">Сага о Винланде</div>
+</div>
+
+<div class="question3" style="width: 500px; height: 700px;margin-left: 700px; background: black; display: none;">
+	<iframe width="500" height="315" src="https://www.youtube.com/embed/JQJtqS83WFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h1 style="color: white;">Что за трек играет на 6:03?</h1>
+	<div class="variant1" style="background: white; height: 70px; font-size: 30px">beyond the oceans ft. Hoogway</div>
+	<div class="variant2" style="background: white; height: 70px; font-size: 30px">harbor ft. Mondo Loops</div>
+	<div class="variant3" style="background: white; height: 70px; font-size: 30px">ayla</div>
+</div> 
+
+<div class="question4"style="width: 500px; height: 500px;margin-left: 700px; background: black; display: none;">
+	<img src="90.jpg" style="width: 500px; height: 300px">
+	<h1 style="color: white;">Как чихают пацаны?</h1>
+	<div class="variant1" style="background: white; height: 70px; font-size: 30px">*апчхи*</div>
+	<div class="variant2" style="background: white; height: 70px; font-size: 30px">*чих*</div>
+	<div class="variant3" style="background: white; height: 70px; font-size: 30px">*взрыв*</div>
+</div> 
+
+<img class="question5" src="https://www.викиники.рф/public/catalog/source/3926_055.jpg" style="width: 2000px; height: 1000px; display: none;">
+
+
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script>
+	find("question0 variant1").click("show", "question1")
+
+	find("question1 variant1").click("alert", "неправильно");
+	find("question1 variant2").click("show", "question2", "правильно");
+	find("question1 variant3").click("alert", "неправильно");
+
+	find("question2 variant1").click("alert", "неправильно");
+	find("question2 variant2").click("alert", "неправильно");
+	find("question2 variant3").click("show", "question3", "правильно");
+
+	find("question3 variant1").click("alert", "неправильно");
+	find("question3 variant2").click("show", "question4", "правильно");
+	find("question3 variant3").click("alert", "неправильно");
+
+	find("question4 variant1").click("alert", "неправильно");
+	find("question4 variant2").click("alert", "неправильно");
+	find("question4 variant3").click("show", "question5", "правильно");
+</script>
